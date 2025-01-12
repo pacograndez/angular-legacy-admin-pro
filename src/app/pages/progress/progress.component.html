@@ -1,0 +1,45 @@
+<!-- ============================================================== -->
+<!-- Start Page Content -->
+<!-- ============================================================== -->
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="progress m-t-30">
+                    <div class="progress-bar progress-bar-striped bg-primary active" 
+                    style="height:6px;"
+                    role="progressbar"
+                    [style.width]="getPercentage1"></div>
+                </div>
+
+                <div class="progress m-t-30">
+                    <div class="progress-bar progress-bar-striped bg-info active" 
+                    style="height:6px;"
+                    role="progressbar"
+                    [style.width]="getPercentage2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-increase [valor]="progress1" (newValue)="progress1 = $event"></app-increase>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-increase [valor]="progress2" (newValue)="progress2 = $event" [btnClass]="'btn btn-info'"></app-increase>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- End PAge Content -->
+<!-- ============================================================== -->
