@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { ProgressComponent } from './progress/progress.component';
 import { ComponentsModule } from '../components/components.module';
 import { GraficaComponent } from './grafica/grafica.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -15,13 +16,15 @@ import { GraficaComponent } from './grafica/grafica.component';
     PagesComponent,
     DashboardComponent,
     ProgressComponent,
-    GraficaComponent
+    GraficaComponent,
+    AccountSettingsComponent
   ],
   exports: [
     PagesComponent,
     DashboardComponent,
     ProgressComponent,
-    GraficaComponent
+    GraficaComponent,
+    AccountSettingsComponent
   ],
   imports: [
     CommonModule,
