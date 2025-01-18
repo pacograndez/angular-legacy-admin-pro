@@ -26,7 +26,7 @@
                             [class]="item.icon"></i><span class="hide-menu">{{item.title}} <span
                                 class="label label-rouded label-themecolor pull-right">{{item.subMenu.length}}</span></span></a>
                     <ul *ngFor="let subItem of item.subMenu" aria-expanded="false" class="collapse">
-                        <li><a [routerLink]="subItem.url">{{subItem.title}} </a></li>
+                        <li><a [routerLink]="subItem.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{subItem.title}} </a></li>
                     </ul>
                 </li>
             </ul>
